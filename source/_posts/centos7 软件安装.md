@@ -4,7 +4,7 @@ date: 2019-10-11 19:29:40
 tags:
   - Centos
   - Linux
-category: 
+category:
   - Linux
 ---
 ### 1.安装Mysql

@@ -86,4 +86,4 @@ admin:
   username: 小耳朵图图
   password_hash: $2a$10$sU9ux0wEX9hl90sl22AkUu4uM7Bc0I00qzH8BLRoM8mkm8WFsKxVm
   secret: lmd my secret
-  deployCommand: './hexo-pubish.bat'
+  deployCommand: 'D:\Cmder\hexo-pubish.bat'
