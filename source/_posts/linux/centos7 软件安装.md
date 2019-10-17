@@ -1,26 +1,25 @@
----
 title: centos7 软件安装
-date: 2019-10-11 19:29:40
 tags:
   - Centos
   - Linux
 category:
   - Linux
+date: 2019-10-11 19:29:40
 ---
 ### 1.安装Mysql
 在要安装的目录下执行一下命令 我这就是进入到/home/money/后执行以下命令
 
 下载
 ```shell
-  wget -i -c http://dev.mysql.com/get/mysql57-community-release-el7-10.noarch.rpm
+wget -i -c http://dev.mysql.com/get/mysql57-community-release-el7-10.noarch.rpm
 ```
 yum 安装
 ```shell
-  yum -y install mysql57-community-release-el7-10.noarch.rpm
+yum -y install mysql57-community-release-el7-10.noarch.rpm
 ```
 安装mysql服务器
 ```shell
-    yum -y install mysql-community-server
+ yum -y install mysql-community-server
 ```
 起动mysql服务器
 ```shell
@@ -37,13 +36,13 @@ systemctl start mysqld
 
     首先重新登录mysql，然后输入status：
     此处语言并不是utf8,我们退出（输入exit）去修改
-
-![](https://user-gold-cdn.xitu.io/2019/10/9/16daf118f2fb864a?w=878&h=453&f=png&s=252968)
+    
+![upload successful](/images/pasted-7.png)
 
     vi /etc/my.cnf
     复制代码添加四行代码
 
-![](https://user-gold-cdn.xitu.io/2019/10/9/16daf16165ad3a9f?w=855&h=656&f=png&s=399749)
+![upload successful](/images/pasted-6.png)
 
 重启mysql服务,登录后status查看，改成utf8就成功了
 shell service mysqld restart

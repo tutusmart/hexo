@@ -1,16 +1,16 @@
 title: VMWare 下安装Centos网络设置（局域网配置）
 author: Tutu
-date: 2019-10-14 09:46:57
 tags:
-    - vm
+  - vm
 category:
-    - Centos
+  - Centos
+date: 2019-10-14 09:46:57
 ---
 **最近打算为centos安装一个界面时，发现不能上网。ping www.baidu.com 报name or service not known。
 原来网络配置没设好。**
 ## 一、选择VMWare的NAT模式。
 1）导航栏“编辑”->“虚拟网络编辑器” ->NAT模式->NAT设置
-![](https://user-gold-cdn.xitu.io/2019/9/2/16cf15c295b06b40?w=655&h=743&f=png&s=58854)
+![](/images/1571319042.jpg)
 
 >记住NAT设置中的子网IP、子网掩码、网关IP三项，接下来配置文件主要是这三项。
  嗯，这里记得按确定，我之前没有按确定写好配置后还是不行，不知道为什么。
@@ -23,11 +23,11 @@ vi /etc/sysconfig/network-scripts/ifcfg-ens33
 ```
 我的是这样的。
 
-![](https://user-gold-cdn.xitu.io/2019/9/2/16cf15d9452c028d?w=658&h=248&f=png&s=18226)
+![upload successful](/images/pasted-3.png)
 
 打开配置文件后，按“i”进行编辑
 
-![](https://user-gold-cdn.xitu.io/2019/9/2/16cf15df2d2f7859?w=406&h=432&f=png&s=25896)
+![upload successful](/images/pasted-4.png)
 
 更改完后，按“ESC”键，然后输入":wq"。意思是退出并保存。
 
@@ -35,11 +35,10 @@ vi /etc/sysconfig/network-scripts/ifcfg-ens33
 service network restart
 ```
 接下来就可以愉快的 ping www.baidu.com
-
-![](https://user-gold-cdn.xitu.io/2019/9/2/16cf15fc53252356?w=666&h=227&f=png&s=19065)
+![upload successful](/images/pasted-5.png)
 
 3)附文件代码
-```js
+```shell
 TYPE=Ethernet
 BOOTPROTO=static  #启用静态IP地址
 DEFROUTE=yes

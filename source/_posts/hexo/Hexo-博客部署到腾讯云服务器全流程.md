@@ -1,4 +1,3 @@
----
 title: Hexo 博客部署到腾讯云服务器全流程
 categories:
   - Hexo
@@ -139,7 +138,7 @@ systemctl start nginx.service     // 启动服务
 使用 `nginx -t` 命令查看位置，一般为 `/etc/nginx/nginx.conf`。
 使用 `vim /etc/nginx/` nginx.conf 命令进行编辑，修改配置文件如下：
 
-```vim
+```shell
 server {
       listen       80 default_server;
       listen       [::]:80 default_server;
@@ -193,12 +192,25 @@ git --work-tree=/home/hexo --git-dir=/home/git/blog.git checkout -f
 ```shell
 chmod +x /home/git/blog.git/hooks/post-receive
 ```
+#### 4.3禁止shell登陆
+出于安全考虑，git用户不允许登录shell，这可以通过编辑/etc/passwd文件完成。
+找到类似下面的一行：
+```shell
+six:x:502:502::/home/six:/bin/bash
+#改为
+six:x:502:502::/home/six:/usr/local/git/bin/git-shell
+#或者(取决安装的git路径)
+six:x:502:502::/home/six:/usr/bin/git-shell
+six:x:502:502::/home/six:/bin/false
+```
+>git用户可以正常通过ssh使用git，但无法登录shell，因为我们为git用户指定的git-shell每次一登录就自动退出
+
 ### 5. hexo本地配置
 在本地中，和部署到 pages 服务一样，需要先 hexo g 命令生成静态文件，通过 hexo s 命令能够正常进行本地访问，并且确保已经安装了 hexo-deployer-git。
 
 配置 _config.yml
 hexo 根目录下的 _config.yml 文件，找到 deploy。
-```vim
+```shell
 deploy:
     type: git
     repo: git@SERVER:/home/git/blog.git     # repository url

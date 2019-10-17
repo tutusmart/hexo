@@ -8,7 +8,6 @@ tags:
 在GitBash 中操作，输入以下命令，等待安装完成。
 ```shell
 npm install -g cnpm --registry=https://registry.npm.taobao.org
-
 ```
 a.安装 hexo
 ```shell
