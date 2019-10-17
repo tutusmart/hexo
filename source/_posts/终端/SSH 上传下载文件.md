@@ -2,10 +2,9 @@ title: SSH 上传下载文件
 author: Tutu
 date: 2019-10-14 09:46:01
 tags:
-  - Centos
-  - Linux
+  - shell
 category:
-  - Linux
+  - shell
 ---
 ### 1、上传本地文件到服务器
 ```shell

@@ -7,9 +7,9 @@ category:
   - mongodb
 ---
 一：先去官网下载对应的版本;
-二：把bin文件夹拷贝到跟MongoDB目录，然后在根目录下建一个data文件夹存放日志跟数据库，然后data文件夹下建db跟log文件夹，并在log文件夹下新建一个日志文件mongolog.log，如下
+二：把bin文件夹拷贝到跟MongoDB目录，然后在根目录下建一个data文件夹存放日志跟数据库，然后data文件夹下建db跟log文件夹，并在log文件夹下新建一个日志文件mongolog.log
+如下图所示：
 
-图所示：
 ![](https://user-gold-cdn.xitu.io/2019/8/6/16c659090f8ce681?w=516&h=304&f=png&s=17920)![](https://user-gold-cdn.xitu.io/2019/8/6/16c6590c733468f9?w=567&h=244&f=png&s=14427)![](https://user-gold-cdn.xitu.io/2019/8/6/16c6590f19426cd6?w=635&h=226&f=png&s=14108)
 
 三：在mongodb根目录下见一个配置文件，内容如下：

@@ -118,7 +118,7 @@ hexo n [我的第一篇博客] 我的第一篇博客
 ### 2.上传到github
 a.配置站点配置文件
 1.打开根目录下站点配置文件_config.yml，配置有关deploy的部分：
-{% asset_img 20191012104426.png This is an example image %}
+![](/images/20191012104426.png)
 b.安装插件
 此时，直接使用hexo d部署到github，将出现如下错误：
 ```shell
