@@ -61,8 +61,9 @@ Centos升级到7之后，内置的防火墙已经从iptables变成了firewalld�
 
 ### 二、firewalld(centos7)
 Centos7默认安装了firewalld，如果没有安装的话，可以使用 yum install firewalld firewalld-config进行安装。
-|命令|解释|
-|-|-|
+
+|命令|解释 |
+| -- |-- |
 |1.启动防火墙|systemctl start firewalld |
 |2.禁用防火墙|systemctl stop firewalld|
 |3.设置开机启动|systemctl enable firewalld|

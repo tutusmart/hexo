@@ -4,13 +4,13 @@ date: 2019-10-14 09:48:34
 tags:
 ---
 ### 一、国内可选下载镜像源
-#### 1、国内  
-163镜像源（推荐选择）  
-http://mirrors.163.com/  
-中国技术科学大学  
-http://mirrors.ustc.edu.cn/  
-Centos官方站点  
-http://vault.centos.org/  
+#### 1、国内
+163镜像源（推荐选择）
+http://mirrors.163.com/
+中国技术科学大学
+http://mirrors.ustc.edu.cn/
+Centos官方站点
+http://vault.centos.org/
 #### 2、Centos7.4下载地址
 http://mirrors.163.com/centos/7.4.1708/isos/x86_64/CentOS-7-x86_64-DVD-1708.iso
 ### 二、配置Centos7.4的yum源
@@ -20,8 +20,8 @@ vim /etc/yum.repos.d/CentOS-163.repo
 ```shell
 # geographically close to the client.  You should use this for CentOS updates
 # unless you are manually picking other mirrors.
-# 
-# If the mirrorlist= does not work for you, as a fall back you can try the 
+#
+# If the mirrorlist= does not work for you, as a fall back you can try the
 # remarked out baseurl= line instead.
 #
 # Jeson@imoocc.com
