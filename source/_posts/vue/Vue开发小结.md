@@ -1,6 +1,6 @@
 ---
 layout: '[vue]'
-title: vue
+title: Vue开发小结.md
 date: 2019-11-11 19:03:36
 tags:
 ---
