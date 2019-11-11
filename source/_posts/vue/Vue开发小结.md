@@ -1,10 +1,13 @@
 ---
 layout: '[vue]'
-title: Vue开发小结.md
+title: Vue开发小结
 date: 2019-11-11 19:03:36
-tags:
+tags: vue
+categories:
+  - vue
 ---
-vue是一套用于构建用户界面的渐进式JavaScript框架，与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，方便与第三方库或既有项目整合。（数据监听的原理，依赖追踪，数据劫持: vue.js 则是采用数据劫持结合发布者-订阅者模式的方式，通过Object.defineProperty()来劫持各个属性的setter，getter，在数据变动时发布消息给订阅者，触发相应的监听回调）；
+vue是一套用于构建用户界面的渐进式JavaScript框架，与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，方便与第三方库或既有项目整合。
+>数据监听的原理，依赖追踪，数据劫持: vue.js 则是采用数据劫持结合发布者-订阅者模式的方式，通过Object.defineProperty()来劫持各个属性的setter，getter，在数据变动时发布消息给订阅者，触发相应的监听回调
 
 ### 1、slot 分发，相当于react的this.props.children 可以把内容 分别发送到 template的指定	 的位置
 ```js
