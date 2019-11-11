@@ -257,6 +257,6 @@ export default {
     }
 </style>
 ```
-具体参考官方文档： [Class 与 Style 绑定](src="https://cn.vuejs.org/v2/guide/class-and-style.html);
+具体参考官方文档： [Class 与 Style 绑定](https://cn.vuejs.org/v2/guide/class-and-style.html);
 
 >如果你用了vue-cli脚手架，在build/utils.js中找到ExtractTextPlugin位置在对象中加入这句publicPath: ../../就行了(本人未测试)。
