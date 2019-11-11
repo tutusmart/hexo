@@ -94,7 +94,7 @@ export default {
   }
 }
 ```
-###7、Vue-resource
+### 7、Vue-resource
 - a) 安装 `cnpm i vue-resource --save`
 - b) 导入Import `VueResource from ‘vue-resource’`
 - c) 使用插件 `Vue.use(VueResource )`
@@ -194,7 +194,10 @@ path: '/product', component: resolve => require(['../modules/Product'], resolve;
 <keep-alive >
 ```
 
-### 15丶路由跳转默认是a标签怎么改变成li标签`<router-link to="/index/+ele.id" tag="li"> 	<router-link/>`
+### 15丶路由跳转默认是a标签怎么改变成li标签
+```html
+<router-link to="/index/+ele.id" tag="li"> 	<router-link/>
+```
 
 ### 16丶如果页面滚动进入其他页面这时滚动会传递处理方法
 将代码加入router页面的选项
@@ -254,5 +257,6 @@ export default {
     }
 </style>
 ```
-具体参考官方文档：[Class 与 Style 绑定](src="https://cn.vuejs.org/v2/guide/class-and-style.html);
->如果你用了vue-cli脚手架，在build/utils.js中找到ExtractTextPlugin位置在对象中加入这句publicPath: '../../'就行了(本人未测试)。
+具体参考官方文档： [Class 与 Style 绑定](src="https://cn.vuejs.org/v2/guide/class-and-style.html);
+
+>如果你用了vue-cli脚手架，在build/utils.js中找到ExtractTextPlugin位置在对象中加入这句publicPath: ../../就行了(本人未测试)。
