@@ -83,9 +83,8 @@ chmod 400 /etc/sudoers
 ```
 #### 2.2 密钥配置
 本地中，使用 Git Bash 创建密钥。
-
+本地 windows gitBash
 ```shell
-# 本地 windows gitBash
 ssh-keygen -t rsa
 ```
 一路回车，即可。
@@ -192,6 +191,11 @@ git --work-tree=/home/hexo --git-dir=/home/git/blog.git checkout -f
 ```shell
 chmod +x /home/git/blog.git/hooks/post-receive
 ```
+在本地windows测试上传
+
+![upload successful](/images/pasted-24.png)
+服务器会给我们同步到/home/hexo文件下，里的index就是我们上传的文件
+![upload successful](/images/pasted-25.png)
 #### 4.3禁止shell登陆
 出于安全考虑，git用户不允许登录shell，这可以通过编辑/etc/passwd文件完成。
 找到类似下面的一行：
@@ -232,7 +236,7 @@ fatal: The remote end hung up unexpected
 
 解决方法：
 ```shell
-# ln -s /usr/local/git/bin/git-upload-pack /usr/bin/git-upload-pack
+ln -s /usr/local/git/bin/git-upload-pack /usr/bin/git-upload-pack
 ```
 报错如下：
 ```shell
@@ -241,5 +245,5 @@ fatal: Could not read from remote repository.
 ```
 解决方法：
 ```shell
-# ln -s /usr/local/git/bin/git-receive-pack /usr/bin/git-receive-pack
+ln -s /usr/local/git/bin/git-receive-pack /usr/bin/git-receive-pack
 ```
