@@ -42,7 +42,6 @@ Visual Studio Code，旨在为所有开发者提供一款专注于代码本身�
     "editor.renderLineHighlight": "none",
     "editor.renderWhitespace": "all",
     "editor.fontFamily": "Courier New",
-    "editor.fontSize": 14,
     "editor.cursorBlinking": "smooth",
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.formatOnPaste": true,
@@ -70,7 +69,6 @@ Visual Studio Code，旨在为所有开发者提供一款专注于代码本身�
     "C_Cpp.errorSquiggles": "Disabled",
     "javascript.implicitProjectConfig.experimentalDecorators": true,
     "workbench.colorTheme": "One Dark Pro",
-    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
     "liveServer.settings.donotShowInfoMsg": true,
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"

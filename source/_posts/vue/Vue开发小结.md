@@ -6,14 +6,13 @@ tags: vue
 categories:
   - vue
 ---
-vue是一套用于构建用户界面的渐进式JavaScript框架，与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，方便与第三方库或既有项目整合。
->数据监听的原理，依赖追踪，数据劫持: vue.js 则是采用数据劫持结合发布者-订阅者模式的方式，通过Object.defineProperty()来劫持各个属性的setter，getter，在数据变动时发布消息给订阅者，触发相应的监听回调
+vue是一套用于构建用户界面的渐进式JavaScript框架，与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，方便与第三方库或既有项目整合，数据监听的原理，依赖追踪，数据劫持: vue.js 则是采用数据劫持结合发布者-订阅者模式的方式，通过Object.defineProperty()来劫持各个属性的setter，getter，在数据变动时发布消息给订阅者，触发相应的监听回调
 
-### 1、slot 分发，相当于react的this.props.children 可以把内容 分别发送到 template的指定	 的位置
+### 1、slot分发，相当于react的this.props.children 可以把内容分别发送到template的指定的位置
 ```html
 <v-header title="首页" >
-        <a slot="left"> 三 </a>
-        <a slot="right">user</a>
+  <a slot="left"> 三 </a>
+  <a slot="right">user</a>
 </v-header>
 <template id="header">
     <div class="header">
@@ -61,12 +60,12 @@ this.listData.splice(index,1,{}) //在vue里面，如果直接改变数组的某
 - b) 配置路由
 ```js
 const routes =  [
-    {
-      path: '/',
-      name: 'Hello',
-      component: Hello
-    }
-  ]
+  {
+    path: '/',
+    name: 'Hello',
+    component: Hello
+  }
+]
 ```
 - c) 把配置传入router
 ```js
@@ -127,6 +126,7 @@ export default {
 }
 ```
 ### 10、在vue项目中使用Vuex
+
 - a) 安装`vuex`
 - b) 创建`store`目录 ，引入`vuex`和`vue`
 - c) 使用插件： `Vue.use(Vuex)`
@@ -190,6 +190,7 @@ path: '/product', component: resolve => require(['../modules/Product'], resolve;
 ```
 - c)  如果路由加载需要重新加载数据的话在生命周期里面放入`activated`函数,就会执行  而`Mounted`不会执行的;
 - d)  除了添加生命周期函数还可以在根标签上加一个 `exclude`
+
 ```html
 <keep-alive  exclude ="组件名字 例如home"/>
 <router-view/>
