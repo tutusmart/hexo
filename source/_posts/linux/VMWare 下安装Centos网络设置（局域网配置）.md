@@ -11,7 +11,7 @@ date: 2019-10-14 09:46:57
 
 ### 一、选择VMWare的NAT模式。
 1）导航栏“编辑”->“虚拟网络编辑器” ->NAT模式->NAT设置
-![](/images/1571319042.jpg)
+![](/blogs/images/1571319042.jpg)
 
 >记住NAT设置中的子网IP、子网掩码、网关IP三项，接下来配置文件主要是这三项。
  嗯，这里记得按确定，我之前没有按确定写好配置后还是不行，不知道为什么。
@@ -28,11 +28,11 @@ vi /etc/sysconfig/network-scripts/ifcfg-ens33
 ```
 我的是这样的。
 
-![upload successful](/images/pasted-3.png)
+![upload successful](/blogs/images/pasted-3.png)
 
 打开配置文件后，按“i”进行编辑
 
-![upload successful](/images/pasted-4.png)
+![upload successful](/blogs/images/pasted-4.png)
 
 更改完后，按“ESC”键，然后输入":wq"。意思是退出并保存。
 
@@ -40,7 +40,7 @@ vi /etc/sysconfig/network-scripts/ifcfg-ens33
 service network restart
 ```
 接下来就可以愉快的 ping www.baidu.com
-![upload successful](/images/pasted-5.png)
+![upload successful](/blogs/images/pasted-5.png)
 
 >附文件代码
 ```shell

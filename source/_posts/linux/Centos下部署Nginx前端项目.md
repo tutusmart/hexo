@@ -16,7 +16,7 @@ yum install -y nginx
 ```
 ### 二、使用
 找到nginx安装位置，我的安装位置在/etc/nginx
-![](/images/pasted-2.png)
+![](/blogs/images/pasted-2.png)
 其中配置文件（nginx.config），我们可以指定端口 代理配置内容
 
 ### 三、 启动
@@ -29,7 +29,7 @@ nginx: [error] open() "/run/nginx.pid" failed (2: No such file or directory)
 ### 四、代理
 代理截图
 
-![](/images/pasted-1.png)
+![](/blogs/images/pasted-1.png)
 ```shell
 nginx -c etc/nginx/nginx.conf
 ```

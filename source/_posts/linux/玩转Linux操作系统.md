@@ -35,7 +35,7 @@ date: 2019-10-11 16:14:40
 
 4. 1970年~1971年：Ken Tompson和Dennis Ritchie用B语言在PDP-11上重写了Unics，并在Brian Kernighan的建议下将其更名为Unix。
 
-![upload successful](/images/pasted-8.png)
+![upload successful](/blogs/images/pasted-8.png)
 
 5. 1972年~1973年：Dennis Ritchie发明了C语言来取代可移植性较差的B语言，并开启了用C语言重写Unix的工作。
 
@@ -45,15 +45,15 @@ date: 2019-10-11 16:14:40
 
 8. 1987年：Andrew S. Tanenbaum教授为了能在课堂上为学生讲解操作系统运作的细节，决定在不使用任何AT&T的源代码前提下，自行开发与Unix兼容的操作系统以避免版权上的争议，该系统被命名为Minix。
 
-![upload successful](/images/pasted-9.png)
+![upload successful](/blogs/images/pasted-9.png)
 
 9. 1991年：Linus Torvalds就读于芬兰赫尔辛基大学期间，尝试在Minix上做一些开发工作，但因为Minix只是作为教学用途的操作系统，功能并不强大，为了方便在学校的新闻组和邮件系统中读写和下载文件，Linus编写了磁盘驱动程序和文件系统，这些东西形成了Linux系统内核的雏形。
 
-![upload successful](/images/pasted-10.png)
+![upload successful](/blogs/images/pasted-10.png)
 
 下图是Unix操作系统家族的图谱。
 
-![upload successful](/images/pasted-11.png)
+![upload successful](/blogs/images/pasted-11.png)
 
 ### Linux概述
 
@@ -888,7 +888,7 @@ Linux系统的命令通常都是如下所示的格式：
 
    长格式查看目录或文件时显示结果及其对应权限的数值如下表所示。
 
-![upload successful](/images/pasted-14.png)
+![upload successful](/blogs/images/pasted-14.png)
 
 2. **chown** - 改变文件所有者。
 
@@ -1016,8 +1016,8 @@ Linux系统的命令通常都是如下所示的格式：
      ```Shell
      [root ~]# vim -d foo.txt bar.txt
      ```
-     
-![upload successful](/images/pasted-15.png)
+
+![upload successful](/blogs/images/pasted-15.png)
 
    - 打开多个文件。
 
@@ -1031,7 +1031,7 @@ Linux系统的命令通常都是如下所示的格式：
 
      可以在末行模式中输入`sp`或`vs`来实现对窗口的水平或垂直拆分，这样我们就可以同时打开多个编辑窗口，通过按两次`Ctrl+w`就可以实现编辑窗口的切换，在一个窗口中执行退出操作只会关闭对应的窗口，其他的窗口继续保留。
 
-![upload successful](/images/pasted-12.png)
+![upload successful](/blogs/images/pasted-12.png)
 
    - 映射快捷键：在vim下可以将一些常用操作映射为快捷键来提升工作效率。
      - 例子1：在命令模式下输入`F4`执行从第一行开始删除10000行代码的操作。
@@ -1056,7 +1056,7 @@ Linux系统的命令通常都是如下所示的格式：
 
      - 可以试一试下面的例子来体验录制宏的操作，该例子来源于[Harttle Land网站](https://harttle.land/tags.html#Vim)，该网站上提供了很多关于vim的使用技巧，有兴趣的可以了解一下。
 
-![upload successful](/images/pasted-13.png)
+![upload successful](/blogs/images/pasted-13.png)
 
 ### 软件安装和配置
 

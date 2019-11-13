@@ -107,7 +107,7 @@ chmod 700 .ssh
 ssh -v git@SERVER
 ```
 其中 SERVER 为服务器 ip 地址。若出现以下错误提示，检查本地密钥位置是否存在 known_hosts 文件，将其删除重新测试。测试结果为，不需要密码直接进入:
-![](/images/1571305205.jpg)
+![](/blogs/images/1571305205.jpg)
 
 #### 2.4 创建网站目录
 
@@ -130,7 +130,7 @@ systemctl start nginx.service     // 启动服务
 使用 yum 安装的 nginx 在新版的 CentOS 中，需要使用 systemctl，而不是直接使用 service start nginx
 此时通过服务器的公网 IP 地址访问，可以看到 nginx 的欢迎页面，表示安装成功，如下图:
 
-![](/images/1571305643.jpg)
+![](/blogs/images/1571305643.jpg)
 
 ### 3.2 配置 Nginx
 
@@ -193,9 +193,9 @@ chmod +x /home/git/blog.git/hooks/post-receive
 ```
 在本地windows测试上传
 
-![upload successful](/images/pasted-24.png)
+![upload successful](/blogs/images/pasted-24.png)
 服务器会给我们同步到/home/hexo文件下，里的index就是我们上传的文件
-![upload successful](/images/pasted-25.png)
+![upload successful](/blogs/images/pasted-25.png)
 #### 4.3禁止shell登陆
 出于安全考虑，git用户不允许登录shell，这可以通过编辑/etc/passwd文件完成。
 找到类似下面的一行：

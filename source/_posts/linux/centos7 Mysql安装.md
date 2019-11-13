@@ -37,12 +37,12 @@ systemctl start mysqld
     首先重新登录mysql，然后输入status：
     此处语言并不是utf8,我们退出（输入exit）去修改
 
-![upload successful](/images/pasted-7.png)
+![upload successful](/blogs/images/pasted-7.png)
 
     vi /etc/my.cnf
     复制代码添加四行代码
 
-![upload successful](/images/pasted-6.png)
+![upload successful](/blogs/images/pasted-6.png)
 
 重启mysql服务,登录后status查看，改成utf8就成功了
 shell service mysqld restart

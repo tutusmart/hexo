@@ -28,7 +28,7 @@ mv node-v6.10.0-linux-x64  nodejs //修改文件名
 ```
 ### 4、修改配置文件，在 /etc/profile
 1.修改内容
-![upload successful](/images/pasted-23.png)
+![upload successful](/blogs/images/pasted-23.png)
 
 2.`source /etc/profile`
 
