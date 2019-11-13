@@ -10,20 +10,20 @@ vue是一套用于构建用户界面的渐进式JavaScript框架，与其它大�
 >数据监听的原理，依赖追踪，数据劫持: vue.js 则是采用数据劫持结合发布者-订阅者模式的方式，通过Object.defineProperty()来劫持各个属性的setter，getter，在数据变动时发布消息给订阅者，触发相应的监听回调
 
 ### 1、slot 分发，相当于react的this.props.children 可以把内容 分别发送到 template的指定	 的位置
-```js
-   <v-header title="首页" >
-            <a slot="left"> 三 </a>
-            <a slot="right">user</a>
-  </v-header>
-  <template id="header">
-       <div class="header">
-            <ul>
-                <li><slot name="left"><</slot></li>
-                <li class="header-tit">{{title}}</li>
-                <li><slot name="right">默认内容</slot></li>
-            </ul>
-        </div>
-   </template>
+```html
+<v-header title="首页" >
+        <a slot="left"> 三 </a>
+        <a slot="right">user</a>
+</v-header>
+<template id="header">
+    <div class="header">
+        <ul>
+            <li><slot name="left"><</slot></li>
+            <li class="header-tit">{{title}}</li>
+            <li><slot name="right">默认内容</slot></li>
+        </ul>
+    </div>
+</template>
 ```
 ### 2、组件通信
 - a) 传递：<v-list  :list-data="listData"></v-list>  （注意驼峰命名，在html里面要改成 "-" 连接）
@@ -126,7 +126,7 @@ export default {
   }
 }
 ```
-### 9、在vue项目中使用Vuex
+### 10、在vue项目中使用Vuex
 - a) 安装`vuex`
 - b) 创建`store`目录 ，引入`vuex`和`vue`
 - c) 使用插件： `Vue.use(Vuex)`
@@ -136,7 +136,8 @@ export default {
 - g) 怎么用：
       1.通过`computed` 获取数据；
       2.通过`methods`方法修改数据
-### 10.组件需要详情数据 detailData（vuex异步的数据操作）
+
+### 11.组件需要详情数据 detailData（vuex异步的数据操作）
 
   - 1、在 store里面 添加 detailData:{}
   - 2、在组件内部通过computed获取数据
@@ -144,7 +145,8 @@ export default {
   - 4、store里面的actions接收到请，get获取服务器数据,获取到数据以后，提交给mutations
   - 5、mutation接收提交的数据，改变store的state，组件会自动更新 =》detailData
 
-### 11、Vuex模块化
+
+### 12、Vuex模块化
 - a) 把每一个页面（模块）的内容拆分到不同的js文件，再引入
 - b) 在组件内部获取数据时，需要加模块名
 ```js
@@ -154,7 +156,7 @@ computed:{
     }
 }
 ```
-### 12、Vuex, mapGetters (传递数据到组件),mapActions（传递方法到组件）
+### 13、Vuex, mapGetters (传递数据到组件),mapActions（传递方法到组件）
 - a) getters 数据解析分拣
 传递数据到组件：
 
@@ -171,14 +173,14 @@ methods:{ //传递action方法给组件
 @click=”changeCartDataAction({type:1,index})” //事件绑定
 ```
 
-### 13、异步组件加载`AMD=>require.js）`;
+### 14、异步组件加载`AMD=>require.js）`;
 
 a) 为什么使用:模块过多，打包文件体积过多，加载缓慢
 b) 怎么用：
 ```js
 path: '/product', component: resolve => require(['../modules/Product'], resolve;
 ```
-### 14、路由缓存keep-alive
+### 15、路由缓存keep-alive
 - a) `keep-alive`是vue自带的组件,路由每次改变的时候,vue会重新渲染组件,导致重新请求数据了,`keep-alive`就可以,缓存数据路由变化的时候不重新请求数据了;
 - b)   使用方法,就是加在路由属兔中就可以了
 ```html
@@ -194,7 +196,7 @@ path: '/product', component: resolve => require(['../modules/Product'], resolve;
 <keep-alive >
 ```
 
-### 15丶路由跳转默认是a标签怎么改变成li标签
+### 16丶路由跳转默认是a标签怎么改变成li标签
 ```html
 <router-link to="/index/+ele.id" tag="li"> 	<router-link/>
 ```
